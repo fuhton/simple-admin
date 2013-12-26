@@ -1,7 +1,7 @@
 #Simple Admin
 ####An admin package for Laravel 4
 
-##Introduction
+B1;2c##Introduction
 This package was built for easy html editing of selected areas. This can save a developer from countless hours of editing solid chunks of content. The backend is styled with twitter bootstrap, uses javascript for adding new content areas, and can manage any amount of areas.
 
 
@@ -13,9 +13,9 @@ This package was built for easy html editing of selected areas. This can save a 
 
 ```json
 {
-"require": {
-"fuhton/simple-admin": "dev-master"
-}
+    "require": {
+        "fuhton/simple-admin": "dev-master"
+    }
 }
 ```
 
