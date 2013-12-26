@@ -1,0 +1,21 @@
+{
+    "name": "fuhton/simple-admin",
+    "description": "An admin section for selected pages.",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Nicholas Smith",
+            "email": "fuhton@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x"
+    },
+    "autoload": {
+        "psr-0": {
+            "Fuhton\\SimpleAdmin": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
