@@ -1,5 +1,7 @@
 #Simple Admin
 ####An admin package for Laravel 4
+Here is an [example](http://simple-admin.iliketheideaof.us/) hosted on my own site. The password is private, but you can view the login url at [/simple-admin](http://simple-admin.iliketheideaof.us/simple-admin).
+
 
 ##Introduction
 This package was built for easy html editing of selected areas. This can save a developer from countless hours of editing solid chunks of content. The backend is styled with twitter bootstrap, uses javascript for adding new content areas, and can manage any amount of areas. It depends on MySQL.
@@ -43,7 +45,7 @@ To create an editable area viewable in your selected view add the following code
 ```
 {{ SimpleAdmin::content('YOUR CONTENT NAME') }}
 ```
-Also be sure you are using a blade template.
+Also be sure you are using a blade template.B1;2c
 
 ####Admin Section
 The admin section allows for HTML input. When creating a new content area, simple click the "Add New Content Area" button, fill in the approriate information, and click submit.
