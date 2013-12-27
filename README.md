@@ -1,13 +1,13 @@
 #Simple Admin
 ####An admin package for Laravel 4
 
-B1;2c##Introduction
-This package was built for easy html editing of selected areas. This can save a developer from countless hours of editing solid chunks of content. The backend is styled with twitter bootstrap, uses javascript for adding new content areas, and can manage any amount of areas.
+##Introduction
+This package was built for easy html editing of selected areas. This can save a developer from countless hours of editing solid chunks of content. The backend is styled with twitter bootstrap, uses javascript for adding new content areas, and can manage any amount of areas. It depends on MySQL.
 
 
 ##Installation
 > ###Notes:
-> Simple Admin requires a  `users` table with an `account_type` column in your Laravel database. When you run the migration, it will check for a `users` table, create it if it doesn't exist, then append an `account_type` column, and finally seed the database with a default admin. If you already have a `users` table and do not wish to modify your schema, do not run the migrations, and contact the package author.
+> Simple Admin requires with a  `users` table with `username, password, and email` columns already created and an `account_type` column in your Laravel database. When you run the migration, it will append an `account_type` column to your `users` table  seed the database with a default admin. If you do not have a users table, please refer to the documentation located at the bottom of this document. If you already have a `users` table and do not wish to modify your schema, do not run the migrations, and contact the package author or simply append the `account_type` column yourself.
 
 1 - Add the following line to the `require` section of `composer.json`:
 
@@ -60,3 +60,19 @@ At this time there is a limited amount of customizable options.
 
 ##Support
 If you have a support issues please submit a ticket and I will hopefully respond quickly. I am the primary developer and would like to see a long life for this project.
+
+Below are a list of helpful solutions
+
+####Creating a `users` table
+Login to your MySQL server and run this command.
+```
+CREATE TABLE users (
+   id INT NOT NULL AUTO_INCREMENT,
+   username varchar(100) NOT NULL,
+   email varchar(100) NOT NULL,
+   password varchar(100) NOT NULL,
+   created_at timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+   updated_at timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+   PRIMARY KEY (id)
+);
+```
