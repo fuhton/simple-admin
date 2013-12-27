@@ -43,6 +43,7 @@ To create an editable area viewable in your selected view add the following code
 ```
 {{ SimpleAdmin::content('YOUR CONTENT NAME') }}
 ```
+Also be sure you are using a blade template.
 
 ####Admin Section
 The admin section allows for HTML input. When creating a new content area, simple click the "Add New Content Area" button, fill in the approriate information, and click submit.
